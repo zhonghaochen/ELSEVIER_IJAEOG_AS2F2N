@@ -9,6 +9,9 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, Drop
     GlobalAveragePooling2D, GlobalAveragePooling3D, Dense, add, Input, Conv3D, concatenate, multiply, DepthwiseConv2D, MaxPooling3D
 
 
+init_lr = 0.001
+kernel_number = 24
+
 "Multiscale share Inception Block"
 def SpaE(X):
     Conv1 = Conv2D(filters=kernel_number, kernel_size=(3, 3), strides=1, padding='same')(X)
