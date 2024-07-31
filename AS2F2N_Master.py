@@ -9,7 +9,7 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, Activation, Drop
     GlobalAveragePooling2D, GlobalAveragePooling3D, Dense, add, Input, Conv3D, concatenate, multiply, DepthwiseConv2D, MaxPooling3D
 
 init_lr = 0.001
-kernel_number = 32
+kernel_number = 16
 
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
